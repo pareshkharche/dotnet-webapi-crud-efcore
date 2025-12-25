@@ -1,0 +1,39 @@
+@rootURL = http://localhost:5266
+GET {{FirstAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{rootURL}}/api/books
+Accept: application/json
+
+
+###
+
+GET {{rootURl}}/api/books/2
+Accept: application/json
+
+
+###
+POST {{rootURL}}/api/books
+Content-Type: application/json
+{
+  "title": "Ruby",
+  "author": "Rudyman",
+  "yearPublished": 2001
+}
+
+
+###
+PUT {{rootURL}}/api/books/1
+Content-Type: application/json
+{
+    "id": 1,
+    "title": "C++",
+    "author": "Dennis Ritchie",
+    "yearPublished": 1972
+ }
+
+
+###
+DELETE {{rootURL}}/api/books/2
